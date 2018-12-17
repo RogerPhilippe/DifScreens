@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="@bool/title_layout_centerhorizontal"
+        android:layout_marginTop="@dimen/title_layout_margin_top"
+        android:layout_marginBottom="@dimen/title_layout_margin_bottom"
+        android:text="@string/main_title"
+        android:textSize="@dimen/title_fontsize" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="@dimen/edit_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/edit_layout_margin_left"
+        android:layout_marginTop="@dimen/edit_layout_margin_top"
+        android:layout_marginRight="@dimen/edit_layout_margin_rigth"
+        android:layout_marginBottom="@dimen/edit_layout_margin_bottom"
+        android:ems="10"
+        android:hint="@string/edit_name_hint"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="@dimen/edit_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="@dimen/edit_layout_margin_left"
+        android:layout_marginTop="@dimen/edit_layout_margin_top"
+        android:layout_marginRight="@dimen/edit_layout_margin_rigth"
+        android:layout_marginBottom="@dimen/edit_layout_margin_bottom"
+        android:layout_toEndOf="@+id/editText6"
+        android:ems="10"
+        android:hint="@string/edit_lastname_hint"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/idSpinnerVeículo"
+        android:layout_width="@dimen/spinner_layout_wight"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/spinner_layout_margin_left"
+        android:layout_marginTop="@dimen/spinner_layout_margin_top"
+        android:layout_marginRight="@dimen/spinner_layout_margin_rigth"
+        android:layout_marginBottom="@dimen/spinner_layout_margin_top" />
+
+    <Spinner
+        android:id="@+id/idSpinnerEstado"
+        android:layout_width="@dimen/spinner_layout_wight"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_marginLeft="@dimen/spinner_layout_margin_left"
+        android:layout_marginTop="@dimen/spinner_layout_margin_top"
+        android:layout_marginRight="@dimen/spinner_layout_margin_rigth"
+        android:layout_marginBottom="@dimen/spinner_layout_margin_bottom"
+        android:layout_toEndOf="@+id/editText6" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idSpinnerVeículo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/btn_layout_margin_top"
+        android:text="@string/btn_verificar" />
+
+</RelativeLayout>

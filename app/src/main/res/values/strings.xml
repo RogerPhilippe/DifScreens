@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DifScreens</string>
+    <string name="label_name">Nome:</string>
+    <string name="label_sobrenome">Sobrenome</string>
+    <string name="label_estado">Estado</string>
+    <string name="btn_verificar">Verificar</string>
+    <string name="main_title">Título do APP</string>
+    <string name="edit_name_hint">nome</string>
+    <string name="edit_lastname_hint">sobrenome</string>
+</resources>
